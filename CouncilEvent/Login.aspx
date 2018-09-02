@@ -11,6 +11,7 @@
     <form runat="server">
 		<asp:TextBox runat="server" ID="UserID"></asp:TextBox>
 		<asp:TextBox runat="server" ID="UserPW"></asp:TextBox>
+		<asp:Button runat="server" ID="LoginButton" Text="로그인" OnClick="LoginButton_Click" />
     </form>
 </body>
 </html>

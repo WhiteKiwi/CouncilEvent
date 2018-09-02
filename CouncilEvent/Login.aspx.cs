@@ -5,6 +5,10 @@ using System.Text;
 namespace CouncilEvent {
 	public partial class Login : System.Web.UI.Page {
 		protected void Page_Load(object sender, EventArgs e) {
+			
+		}
+
+		protected void LoginButton_Click(object sender, EventArgs e) {
 			if (string.IsNullOrEmpty(UserID.Text.Trim())) // ID가 비어있을 경우
 				Response.Write("<script>alert('ID를 입력해주세요.');</script>");
 			else if (string.IsNullOrEmpty(UserPW.Text.Trim())) // PW가 비어있을 경우
