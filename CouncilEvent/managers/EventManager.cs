@@ -33,5 +33,29 @@ namespace CouncilEvent.managers {
 				conn.Close();
 			}
 		}
+
+		/// <summary>
+		/// 내 점수 가져오는 메서드
+		/// </summary>
+		/// <param name="UserID">User's ID</param>  
+		/// <param name="SingerNumber">Singer Number</param>  
+		/// <see cref="Event"/>
+		public static int GetMyScore(string UserID, int SingerNumber) {
+			// Connect to DB
+			using (var conn = new MySqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["COUNCILDB"].ConnectionString)) {
+				conn.Open();
+
+				// Command Text - Create
+				string commandText = "SELECT Score FROM " + EVENTS + " WHERE UserID='" + UserID + "' AND SingerNumber='" + SingerNumber + "'";
+				var cmd = new MySqlCommand(commandText, conn);
+
+				object result = cmd.ExecuteScalar();
+
+				// Connection Close
+				conn.Close();
+
+				return result == null ? -1 : Convert.ToInt32(result);
+			}
+		}
 	}
 }
