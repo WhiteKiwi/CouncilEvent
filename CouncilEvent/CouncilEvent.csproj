@@ -113,7 +113,6 @@
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="managers\EventManager.cs" />
-    <Compile Include="managers\UserManager.cs" />
     <Compile Include="models\Event.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
