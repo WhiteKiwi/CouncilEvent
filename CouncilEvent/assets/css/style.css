@@ -34,3 +34,51 @@
 	margin-left: 20px;
 	border: none;
 }
+
+/* Login Page */
+.login-html, .login-html > body {
+	height: 100% !important;
+}
+
+	.login-html > body > form {
+		height: calc(100% - 50px);
+		position: relative;
+	}
+
+		.login-html > body > form > div {
+			width: 500px;
+			background-color: #F6F6F6;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+			.login-html > body > form > div > div > span:nth-child(1) {
+				float: left;
+				margin-right: 20px;
+				width: 280px;
+			}
+
+/* 각진 버튼 */
+.btn.btn-square {
+	border-radius: 0;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+}
+
+/* footer */
+footer {
+	text-align: center;
+	background-color: #5B5B5B;
+	height: 50px;
+}
+
+	footer > span {
+		color: white;
+		line-height: 50px;
+	}
+
