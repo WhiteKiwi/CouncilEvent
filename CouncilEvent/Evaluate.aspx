@@ -49,7 +49,7 @@
 	<div class="text-left text-white" style="padding: 200px;">
 		<span style="font-size: 35pt;"><b>제 점수는요 :</b></span>
 		<div class="text-center">
-			<span style="font-size: 200pt;"><b><%= myScore == -1 ? "XX" : myScore.ToString() %></b></span><span style="font-size: 130pt;"><b>점</b></span>
+			<span style="font-size: 200pt;"><b><%= myScore == -1 ? "__" : myScore.ToString() %></b></span><span style="font-size: 130pt;"><b>점</b></span>
 		</div>
 	</div>
 
@@ -63,5 +63,31 @@
 		<h4 class="float-left">충남삼성고등학교 학생회</h4>
 		<h4 class="float-right">Copyright &copy; Copyright 이호은, 장지훈 All Rights Reserved</h4>
 	</div>
+
+	<script>
+		if (getParameterByName("singer") == 0) {
+			alert('아직 오픈 시간이 아닙니다.');
+			location.href = '/';
+		} else if (getParameterByName("singer") == 0) {
+			alert('아직 오픈 시간이 아닙니다.');
+			location.href = '/';
+		} else if (getParameterByName("singer") == 3) {
+			alert('아직 오픈 시간이 아닙니다.');
+			location.href = '/';
+		} else if (getParameterByName("singer") == 4) {
+			alert('아직 오픈 시간이 아닙니다.');
+			location.href = '/';
+		}
+		
+		function getParameterByName(name, url) {
+			if (!url) url = window.location.href;
+			name = name.replace(/[\[\]]/g, '\\$&');
+			var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+				results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, ' '));
+		}
+	</script>
 </body>
 </html>
