@@ -74,6 +74,8 @@
     <Content Include="assets\img\background.jpg" />
     <Content Include="assets\img\blue-flag.jpg" />
     <Content Include="assets\img\favicon-csc.png" />
+    <Content Include="assets\img\GameOfConcert.png" />
+    <Content Include="assets\img\gold-bar.JPG" />
     <Content Include="assets\img\green-flag.JPG" />
     <Content Include="assets\img\red-flag.JPG" />
     <Content Include="assets\img\yellow-flag.JPG" />
