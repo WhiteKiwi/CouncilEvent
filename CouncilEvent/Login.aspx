@@ -15,30 +15,44 @@
 	<link rel="stylesheet" href="/assets/css/bootstrap.min.css?ver=1.0">
 
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="/assets/css/style.css?ver=0.1">
+	<link rel="stylesheet" href="/assets/css/style.css?ver=0.2">
+
+	<!-- Web Font -->
+	<link rel="stylesheet" href="/assets/css/nanumsquare.css">
 </head>
 <body>
-	<form runat="server">
-		<div class="p-5 border border-secondary rounded">
-			<div class="text-center" style="margin-top: -15px; padding-right: 15px; padding-bottom: 10px;">
-				<img src="/assets/img/Logo.png" width="280" />
-			</div>
-			<br />
+	<br />
+	<br />
+	<div class="text-center" style="margin-top: 33%; margin-bottom: 20%;">
+		<img src="/assets/img/banner.jpg" width="650" />
+	</div>
+	<br />
+	<br />
+	<br />
+	<form runat="server" class="text-center">
+		<div class="p-5" style="border: 3px solid #ffc107; width: 42%; margin: auto;">
 			<div>
-				<span>
-					<asp:TextBox runat="server" ID="UserID" CssClass="form-control" placeholder="CNSAnet ID"></asp:TextBox><br />
-					<asp:TextBox runat="server" ID="UserPW" CssClass="form-control" TextMode="Password" placeholder="CNSAnet PW"></asp:TextBox>
-				</span>
-				<span>
-					<asp:Button runat="server" ID="LoginButton" CssClass="btn btn-lg btn-warning btn-square square" Text="로그인" OnClick="LoginButton_Click" />
-				</span>
+				<asp:TextBox runat="server" ID="UserID" CssClass="login-form-control" placeholder="ID"></asp:TextBox><br />
+				<br />
+				<br />
+				<asp:TextBox runat="server" ID="UserPW" CssClass="login-form-control" TextMode="Password" placeholder="PW"></asp:TextBox>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<asp:Button runat="server" ID="LoginButton" CssClass="btn btn-login" OnClick="LoginButton_Click" />
 			</div>
 		</div>
+		<br />
+		<br />
+		<h4 class="color-gold">큰사넷과 동일한 계정으로 로그인 할 수 있습니다</h4>
 	</form>
 
-	<!-- Copyright -->
-	<footer class="fixed-bottom">
-		<span>Copyright © 2018 Copyright 장지훈, 최소정, 이호은 All Rights Reserved</span>
-	</footer>
+
+	<div class="footer fixed-bottom">
+		<h5 class="float-left">충남삼성고등학교 학생회</h5>
+		<h5 class="float-right">Copyright &copy; Copyright 이호은, 장지훈 All Rights Reserved</h5>
+	</div>
 </body>
 </html>

@@ -38,27 +38,17 @@
 /* Login Page */
 .login-html, .login-html > body {
 	height: 100% !important;
+	background-image: url('/assets/img/background.jpg');
+	background-size: cover;
 }
 
 	.login-html > body > form {
-		height: calc(100% - 50px);
 		position: relative;
 	}
 
 		.login-html > body > form > div {
 			width: 500px;
-			background-color: #F6F6F6;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
 		}
-
-			.login-html > body > form > div > div > span:nth-child(1) {
-				float: left;
-				margin-right: 20px;
-				width: 280px;
-			}
 
 /* 각진 버튼 */
 .btn.btn-square {
@@ -82,3 +72,31 @@ footer {
 		line-height: 50px;
 	}
 
+.btn-login {
+	background-image: url('/assets/img/login.JPG');
+	background-size: cover;
+	height: 64px;
+	width: 400px;
+}
+	.btn-login:not(:disabled):not(.disabled).active, .btn-login:not(:disabled):not(.disabled):active, .show > .btn-login.dropdown-toggle {
+		background-image: url('/assets/img/login_pushed.JPG');
+		background-size: cover;
+	}
+
+.login-form-control {
+	background-color: #262626;
+	width: 400px;
+	border: none;
+	padding: 20px;
+	text-align: center;
+	font-size: 22pt;
+	color: white;
+}
+
+.color-gold {
+	color: #FFC611;
+}
+
+input[type="password"] {
+	font-family: caption;
+}
