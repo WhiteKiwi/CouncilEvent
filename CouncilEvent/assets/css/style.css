@@ -17,19 +17,19 @@
 }
 
 .input-box {
-	height: 140px;
-	width: 700px;
+	height: 80px;
+	width: 400px;
 	background-color: #363636;
 	text-align: center;
-	font-size: 30pt;
+	font-size: 20pt;
 	color: white;
 	border: none;
 }
 
 .check-button {
-	height: 140px;
-	width: 150px;
-	font-size: 30pt;
+	height: 80px;
+	width: 100px;
+	font-size: 20pt;
 	background-color: #DDDDDD;
 	margin-left: 20px;
 	border: none;
@@ -87,7 +87,7 @@ footer {
 	background-color: #262626;
 	width: 400px;
 	border: none;
-	padding: 20px;
+	padding: 12px;
 	text-align: center;
 	font-size: 22pt;
 	color: white;

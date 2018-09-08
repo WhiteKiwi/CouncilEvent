@@ -23,7 +23,7 @@
 <body>
 	<br />
 	<br />
-	<div class="text-center" style="margin-top: 33%; margin-bottom: 20%;">
+	<div class="text-center" style="margin-top: 30%; margin-bottom: 16%;">
 		<img src="/assets/img/banner.jpg" width="650" />
 	</div>
 	<br />

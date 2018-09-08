@@ -89,6 +89,10 @@
     <Content Include="assets\img\login.JPG" />
     <Content Include="assets\img\login_pushed.JPG" />
     <Content Include="assets\img\Logo.png" />
+    <Content Include="assets\img\team1.JPG" />
+    <Content Include="assets\img\team2.JPG" />
+    <Content Include="assets\img\team3.JPG" />
+    <Content Include="assets\img\team4.JPG" />
     <Content Include="assets\img\yellow-flag.JPG" />
     <Content Include="Default.aspx" />
     <Content Include="Evaluate.aspx" />

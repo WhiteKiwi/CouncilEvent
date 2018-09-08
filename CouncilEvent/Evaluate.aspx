@@ -28,9 +28,9 @@
 </head>
 <body class="background">
 	<!-- Navbar -->
-	<div class="text-center p-3" style="background-image: url('/assets/img/gold-bar.jpg');">
+	<div class="text-center p-3">
 		<a href="/">
-			<img src="/assets/img/GameOfConcert.png" width="400" />
+			<img src="/assets/img/banner.jpg" width="500" />
 		</a>
 	</div>
 	<br />
@@ -38,18 +38,29 @@
 	<br />
 	<br />
 	<br />
-	
-	<!-- 소개소개 -->
-	<img src="/assets/img/yellow-flag.jpg" height="300" />
 
+	<!-- 소개소개 -->
+	<% int singer = int.Parse(Request.QueryString["singer"]);
+		if (singer == 1) {
+	%>
+	<img src="/assets/img/team1.jpg" height="213" />
+	<%} else if (singer == 2) { %>
+	<img src="/assets/img/team2.jpg" height="218" />
+	<%} else if (singer == 3) { %>
+	<img src="/assets/img/team3.jpg" height="215" />
+	<%} else if (singer == 4) { %>
+	<img src="/assets/img/team4.jpg" height="212" />
+	<%}%>
 	<!-- 내 점수는? -->
 	<%
-		int myScore = CouncilEvent.managers.EventManager.GetMyScore((string)Session["UserID"], int.Parse(Request.QueryString["singer"]));
-		%>
-	<div class="text-left text-white" style="padding: 200px;">
-		<span style="font-size: 35pt;"><b>제 점수는요 :</b></span>
-		<div class="text-center">
-			<span style="font-size: 200pt;"><b><%= myScore == -1 ? "__" : myScore.ToString() %></b></span><span style="font-size: 130pt;"><b>점</b></span>
+		int myScore = CouncilEvent.managers.EventManager.GetMyScore((string)Session["UserID"], singer);
+	%>
+	<div class="text-left text-white" style="padding: 200px; padding-bottom: 100px;">
+		<div style="border: 3px solid #ffc107; padding: 100px; margin: auto;">
+			<span style="font-size: 35pt;"><b>제 점수는요 :</b></span>
+			<div class="text-center">
+				<span class="color-gold" style="font-size: 200pt;"><b><%= myScore == -1 ? "__" : myScore.ToString() %></b></span><span style="font-size: 130pt;"><b>점</b></span>
+			</div>
 		</div>
 	</div>
 
@@ -78,7 +89,7 @@
 			alert('아직 오픈 시간이 아닙니다.');
 			location.href = '/';
 		}
-		
+
 		function getParameterByName(name, url) {
 			if (!url) url = window.location.href;
 			name = name.replace(/[\[\]]/g, '\\$&');

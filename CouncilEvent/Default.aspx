@@ -28,9 +28,9 @@
 </head>
 <body class="background">
 	<!-- Navbar -->
-	<div class="text-center p-3" style="background-image: url('/assets/img/gold-bar.jpg');">
+	<div class="text-center p-3">
 		<a href="/">
-			<img src="/assets/img/GameOfConcert.png" width="400" />
+			<img src="/assets/img/banner.jpg" width="600" />
 		</a>
 	</div>
 
@@ -40,34 +40,45 @@
 	<br />
 	<br />
 	<a href="Evaluate.aspx?singer=1">
-		<img src="/assets/img/yellow-flag.jpg" height="300" />
+		<img src="/assets/img/team1.jpg" height="213" />
 	</a>
+	<br />
+	<br />
 	<br />
 	<br />
 	<br />
 	<br />
 	<br />
 	<a href="Evaluate.aspx?singer=2">
-		<img src="/assets/img/yellow-flag.jpg" height="300" />
+		<img src="/assets/img/team2.jpg" height="218" />
 	</a>
+	<br />
+	<br />
 	<br />
 	<br />
 	<br />
 	<br />
 	<br />
 	<a href="Evaluate.aspx?singer=3">
-		<img src="/assets/img/yellow-flag.jpg" height="300" />
+		<img src="/assets/img/team3.jpg" height="215" />
 	</a>
+	<br />
+	<br />
 	<br />
 	<br />
 	<br />
 	<br />
 	<br />
 	<a href="Evaluate.aspx?singer=4">
-		<img src="/assets/img/yellow-flag.jpg" height="300" />
+		<img src="/assets/img/team4.jpg" height="212" />
 	</a>
 	<br />
 	<br />
+	<br />
+	<br />
+	<div class="w-100 text-center">
+		<h4 class="color-gold">배너를 클릭하여 점수 평가 페이지로 이동할 수 있습니다</h4>
+	</div>
 	<br />
 	<br />
 	<br />
