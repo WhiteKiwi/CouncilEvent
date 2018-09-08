@@ -79,9 +79,6 @@
 	<div class="w-100 text-center">
 		<h4 class="color-gold">배너를 클릭하여 점수 평가 페이지로 이동할 수 있습니다</h4>
 	</div>
-	<br />
-	<br />
-	<br />
 
 	<div class="footer fixed-bottom">
 		<h4 class="float-left">충남삼성고등학교 학생회</h4>
